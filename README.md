@@ -16,6 +16,7 @@ A script, that opens up a given doodle(www.dooodle.com) - link and selects the w
 * Right-click project, select "configure->convert to maven project"
   - Ignore the error
 * Follow these steps: http://www.scandio.de/2012/10/eclipse-enabling-maven-dependency-management-has-encountered-a-problem/
+* Download and copy this file into C:/Windows/Sys32/ https://sites.google.com/a/chromium.org/chromedriver/downloads (Or put it somewhere else, where it can be found via the PATH variable)
 
 Now you are ready
 
