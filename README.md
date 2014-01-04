@@ -7,6 +7,7 @@ A script, that opens up a given doodle(www.dooodle.com) - link and selects the w
 1. Setup
 -----------
 
+
 o Clone the repository into your workspace
 o Install maven from here http://maven.apache.org/download.cgi
   - Follow the instructions further down
