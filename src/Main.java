@@ -13,7 +13,6 @@ public class Main {
 
 	private static WebDriver driver = null;
 	
-	private static String url = "http://doodle.com/aq5gv2gg498utgmcvd7in9ey/admin?#admin";
 	private static String moreCellsText = "Weitere Zeitfelder hinzufügen";
 	private static String copySlotsText = "Erste Zeile kopieren und einfügen";
 
@@ -24,7 +23,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		if(args.length  == 0){
-			System.out.println("Please call this command like this: \"doodle-o-mat [url to the doodle]\"");
+			System.out.println("Please call this promgram like this: \"doodle-o-mat [admin-url to the doodle]\"");
 			System.exit(1);
 		}
 		
@@ -170,9 +169,9 @@ public class Main {
 		for (WebElement dayBox : dayBoxes) {
 			// Iterate over all the boxes. The boxes in the calendar have id's
 			// like this:
-			// "day<DayOfTheMonth>". Grab the monday + offset
+			// "day<DayOfTheMonth-1>". Grab the monday + offset
 			try {
-				if (dayBox.getAttribute("id").equals("day" + (nextMonday + i))) {
+				if (dayBox.getAttribute("id").equals("day" + (nextMonday + i + 1))) {
 					System.out.println("Monday: " + nextMonday + " offset: "
 							+ i);
 					// select that day
